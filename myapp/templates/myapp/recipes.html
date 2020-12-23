@@ -106,14 +106,13 @@
 			<div class="container">
 				<form class="big-search-form" action="{% url 'add-blog' %}" method='POST' enctype="multipart/form-data"> 
 					{% csrf_token %}
-					<input type="text" placeholder="Title" name='title'>
-					&nbsp;
-					<input type="text" placeholder="Description" name='description'>
-					&nbsp;
-					<input type="date" placeholder="DATE" name='date'>
-					&nbsp;
-					<input type="file" placeholder="dishphoto" name='pic'>
+					<center>
+					<input type="text" placeholder="Title" name='title'><br>
+					<textarea placeholder="Description" name='description' ></textarea><br>
+					<input type="date" placeholder="DATE" name='date'><br>
+					<input type="file" placeholder="dishphoto" name='pic'><br>
 					<input type="submit" value="Add blog">
+					</center>
 				</form>
 			</div>
 		</div>
